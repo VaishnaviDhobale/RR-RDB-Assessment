@@ -1,8 +1,4 @@
 # RR-RDB-Assessment
-## Overview
-
-This project involves analyzing Codecademy learners' mockup data using SQL queries. The data is stored in two tables: `users` and `progress`. Your task is to explore the data and gain insights by writing SQL queries.
-
 ## Tables
 
 ### 1. `users` table:
