@@ -1,0 +1,30 @@
+// Question no. 2
+1. select * from users;
+2. select * from progress;
+3. SELECT * FROM users WHERE email_domain LIKE '%.edu'
+LIMIT 25;
+4. SELECT COUNT(*) FROM users WHERE city = "New York" AND email_domain LIKE "%.edu";
+5. SELECT count(*) FROM users WHERE mobile_app = "mobile-user";
+
+
+// Question no.3
+6. SELECT strftime('%H', sign_up_at) AS hour, COUNT(*) FROM users GROUP BY 1;
+
+
+// Question no.4
+7. SELECT * FROM users JOIN progress ON users.user_id = progress.user_id;
+
+8. SELECT users.user_id, email_domain, learn_sql, learn_html, learn_javascript, learn_java, learn_cpp
+FROM users
+JOIN progress ON users.user_id = progress.user_id
+WHERE email_domain LIKE '%.edu';
+
+9. SELECT users.user_id, city, learn_sql, learn_html, learn_javascript, learn_java, learn_cpp 
+FROM users 
+JOIN progress ON users.user_id = progress.user_id 
+WHERE city LIKE 'New York%';
+
+10. SELECT users.user_id, city, learn_sql, learn_html, learn_javascript, learn_java, learn_cpp 
+FROM users 
+JOIN progress ON users.user_id = progress.user_id 
+WHERE city LIKE 'Chicago%';
